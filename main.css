@@ -31,6 +31,9 @@
 .pagination {
   position: relative;
 }
+#firstCircle {
+  background: white;
+}
 .pagination:nth-child(2) {
   left: 30px;
 }
@@ -56,9 +59,9 @@
   background: white;
 }
 
-.active {
+/* .active {
   background: #777;
-}
+} */
 
 #previousButton {
   position: absolute;
