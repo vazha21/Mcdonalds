@@ -53,7 +53,6 @@ function paginate(current_image_index){
         }
         else{
             circleLinks[index].style.background = 'none';
-            
 
         }
         
