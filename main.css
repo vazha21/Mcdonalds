@@ -19,8 +19,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  -webkit-transition: background-image 0.7 s ease-in-out;
-  transition: background-image 0.7s ease-in-out;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
 }
 
 .container {
@@ -73,7 +73,7 @@
   z-index: 10;
   left: 3%;
   font-size: 60px;
-  color: White;
+  color: rgb(231, 231, 231);
   opacity: 0.9;
   cursor: pointer;
 }
@@ -84,7 +84,7 @@
   z-index: 10;
   right: 3%;
   font-size: 60px;
-  color: rgb(255, 255, 255);
+  color: rgb(231, 231, 231);
   opacity: 0.9;
   cursor: pointer;
 }
