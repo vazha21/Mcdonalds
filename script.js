@@ -18,7 +18,6 @@ for (let i = 0; i < circleLinks.length; i++) {
 
     })
 }
-
 // button PREVIOUS IMAGE.
 function prev(){
     if (current_image_index <= 0) current_image_index = images.length; 
@@ -57,7 +56,6 @@ function paginate(current_image_index){
         }
         
     }
-
 }
 
 
