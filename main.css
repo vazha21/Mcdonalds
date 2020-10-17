@@ -13,6 +13,9 @@ a {
 }
 
 /* this is where styling navbar starts */
+.line-breaks {
+  display: none;
+}
 header {
   z-index: 10;
   width: 100%;
@@ -107,13 +110,22 @@ header {
     background: black;
     backdrop-filter: unset;
   }
+  .line-breaks {
+    display: block;
+  }
 }
 
 /* this is where styling slideshow starts */
 .slide-show-container {
   position: relative;
   width: 100vw;
-  height: 34em;
+  height: 31em;
+}
+
+@media only screen and (max-width: 850px) {
+  .slide-show-container {
+    height: 25em;
+  }
 }
 
 .slide-show-image {
