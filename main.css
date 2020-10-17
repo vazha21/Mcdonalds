@@ -20,7 +20,7 @@ header {
   background: rgba(0, 0, 0, 0.5);
   height: 6.5rem;
   backdrop-filter: blur(1px);
-  font-size: 16px;
+  font-size: 1rem;
 }
 .navbar-container {
   padding: 0.7rem 2rem 0 3rem;
@@ -73,6 +73,40 @@ header {
 }
 .navbar-bottom ul li a {
   font-weight: bold;
+}
+
+/* starting working on navbar responsivness  */
+
+@media only screen and (max-width: 1056px) {
+  .navbar-container {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1022px) {
+  .navbar-container {
+    padding: 0.7rem 1rem 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar-bottom {
+    display: none;
+  }
+  .navbar-top {
+    display: none;
+  }
+  .logo-div {
+    margin-left: 10%;
+  }
+  .logo-div img {
+    width: 56px;
+    height: 56px;
+  }
+  header {
+    height: 5.4rem;
+    background: black;
+    backdrop-filter: unset;
+  }
 }
 
 /* this is where styling slideshow starts */
