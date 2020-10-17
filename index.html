@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- this is where navbar starts -->
+    <header>
+      <div class="navbar-container">
+        <div class="main-grid">
+          <div class="logo-div">
+            <img
+              src="./images/navbar/mcdonalds-logo.png"
+              alt="Mcdonalds logo"
+              width="75px"
+              height="75px"
+            />
+          </div>
+          <div class="navbar-grid">
+            <div class="navbar-top">
+              <ul>
+                <li><a href="#">კარიერა</a></li>
+                <li id="lupa">
+                  <img src="./images/navbar/search-lupa.svg" alt="" />
+                </li>
+                <li>
+                  <span id="eng"><a href="#">ENG</a></span>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-bottom">
+              <ul>
+                <li><a href="">ჩვენი პროდუქტი</a></li>
+                <li><a href="">ჩვენ შესახებ</a></li>
+                <li><a href="">რესტორანი მთელი ოჯახისთვის</a></li>
+                <li><a href="">აპლიკაცია</a></li>
+                <li><a href="">მაკდელივერი</a></li>
+                <li><a href="">MCCAFE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- this is where slideshow starts -->
     <div class="slide-show-container">
-        <i class="fas fa-arrow-left" id='previousButton' onclick="prev()"></i>
-        <i class="fas fa-arrow-right" id='nextButtton' onclick='next()'></i>
-        
-        <div class="container">
-            <a class="pagination" href="#"><span class="circle" id='firstCircle' ></span></a>
-            <a class="pagination" href="#"><span class="circle"></span></a>
-            <a class="pagination" href="#"><span class="circle"></span></a>
-            <a class="pagination" href="#"><span class="circle"></span></a>
-        </div>
+      <i class="fas fa-arrow-left" id="previousButton" onclick="prev()"></i>
+      <i class="fas fa-arrow-right" id="nextButtton" onclick="next()"></i>
 
+      <div class="container">
+        <a class="pagination" href="#"
+          ><span class="circle" id="firstCircle"></span
+        ></a>
+        <a class="pagination" href="#"><span class="circle"></span></a>
+        <a class="pagination" href="#"><span class="circle"></span></a>
+        <a class="pagination" href="#"><span class="circle"></span></a>
+      </div>
 
-
-
-        <div class="slide-show-image">
-            <!-- <img src="./images/slide-show/slide-1.jpg" alt="" class='slider-img'> -->
-        </div>
+      <div class="slide-show-image">
+        <!-- <img src="./images/slide-show/slide-1.jpg" alt="" class='slider-img'> -->
+      </div>
     </div>
-    
 
-    <script src='./script.js'></script>
-    
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -2,12 +2,84 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 
+/* this is where styling navbar starts */
+header {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  height: 6.5rem;
+  backdrop-filter: blur(1px);
+  font-size: 16px;
+}
+.navbar-container {
+  padding: 0.7rem 2rem 0 3rem;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+}
+.navbar-grid {
+  display: grid;
+  grid-template-rows: 0.1fr 2fr;
+}
+.navbar-top {
+  display: Flex;
+  justify-content: flex-end;
+}
+.navbar-top ul {
+  display: flex;
+  align-items: center;
+}
+.navbar-top li {
+  padding: 0 15px;
+  display: inline-block;
+}
+.navbar-top ul li:nth-child(1) {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.navbar-top ul li:nth-child(3) {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+#eng {
+  font-size: 0.7rem;
+  background: #b92919;
+  padding: 8px 9px;
+  border-radius: 20px;
+}
+
+.navbar-bottom {
+  /* display: flex; */
+  /* justify-content: left; */
+  /* align-items: flex-end; */
+  position: relative;
+}
+.navbar-bottom ul {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-bottom ul li a {
+  font-weight: bold;
+}
+
+/* this is where styling slideshow starts */
 .slide-show-container {
   position: relative;
   width: 100vw;
-  height: 57vh;
+  height: 34em;
 }
 
 .slide-show-image {
