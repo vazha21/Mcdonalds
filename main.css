@@ -206,3 +206,103 @@ header {
   opacity: 0.9;
   cursor: pointer;
 }
+
+/* starting working on gallery  */
+
+.gallery-grid {
+  display: Grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 20rem;
+}
+.grid.one {
+  background: url(./images/grid/grid-1.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.grid.two {
+  background: url(./images/grid/grid-2.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.grid.three {
+  background: url(./images/grid/grid-3.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.grid.four {
+  background: url(./images/grid/grid-4.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.grid.five {
+  background: url(./images/grid/grid-5.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.grid.six {
+  background: url(./images/grid/grid-6.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.grid::before {
+  content: "";
+  display: block;
+  filter: blur(0.5px) brightness(0.5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: inherit;
+  z-index: 0;
+}
+
+.text {
+  z-index: 3;
+  text-align: center;
+  color: White;
+  font-weight: bolder;
+}
+.text p {
+  display: inline-block;
+  padding: 10px 40px;
+  margin: 10px 15px;
+  background: #b92919;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#fb {
+  background: #35589e;
+  font-weight: bold;
+  margin-top: 23px;
+}
+input {
+  border-radius: 20px;
+  border: none;
+  width: 280px;
+  height: 36px;
+  padding: 5px 10px;
+}
+.input-tag {
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+input:focus {
+  outline: none;
+}
