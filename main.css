@@ -219,40 +219,43 @@ header {
   justify-content: center;
   position: relative;
   height: 20rem;
+  transition: all 0.5s;
+}
+.grid.one:hover,
+.grid.two:hover,
+.grid.three:hover,
+.grid.four:hover,
+.grid.five:hover,
+.grid.six:hover {
+  background-size: 103% 102%;
 }
 .grid.one {
   background: url(./images/grid/grid-1.jpg);
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .grid.two {
   background: url(./images/grid/grid-2.jpg);
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .grid.three {
   background: url(./images/grid/grid-3.jpg);
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .grid.four {
   background: url(./images/grid/grid-4.jpg);
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .grid.five {
   background: url(./images/grid/grid-5.jpg);
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .grid.six {
   background: url(./images/grid/grid-6.jpg);
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
