@@ -82,7 +82,7 @@ function paginate(current_image_index){
     }
 }
 
-$(document.getElementsByClassName('chven-shesaxeb-li')[0]).hover(function(){
+$(document.getElementsByClassName('chveni-produqti-li')[0]).hover(function(){
     $(document.getElementsByClassName('chveni-prodquti-hover')[0]).css("display", "flex");
     }, function(){
         $(document.getElementsByClassName('chveni-prodquti-hover')[0]).hover(function(){
@@ -93,3 +93,13 @@ $(document.getElementsByClassName('chven-shesaxeb-li')[0]).hover(function(){
           
              
   });
+
+$(document.getElementsByClassName('chven-shesaxeb-li')[0]).hover(function(){
+    $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", "flex");
+    }, function(){
+    $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).hover(function(){
+        $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", "flex");
+        }, function(){
+        $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", 'none');
+        }); 
+});

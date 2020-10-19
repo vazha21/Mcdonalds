@@ -79,7 +79,8 @@ header {
   font-weight: bold;
 }
 
-.chveni-prodquti-hover {
+.chveni-prodquti-hover,
+.chven-shesaxeb-hover {
   background: black;
   z-index: 100;
   margin-top: 14px;
