@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  color: White;
 }
 ul {
   list-style: none;
@@ -76,6 +77,34 @@ header {
 }
 .navbar-bottom ul li a {
   font-weight: bold;
+}
+
+.chveni-prodquti-hover {
+  background: black;
+  z-index: 100;
+  margin-top: 14px;
+  padding-left: 5rem;
+  height: 16em;
+  display: none;
+}
+.sub-section {
+  text-align: center;
+  /* padding: 20px 0px; */
+  margin: 10px 24px;
+  width: 140px;
+  height: 140px;
+}
+.sub-section img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.sub-section p {
+  font-weight: bold;
+  margin-top: 5px;
+  width: 160px;
+}
+.chven-shesaxeb-li:hover #chveni-prodquti-hover {
+  display: flex;
 }
 
 /* starting working on navbar responsivness  */
