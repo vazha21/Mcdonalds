@@ -82,8 +82,12 @@ function paginate(current_image_index){
     }
 }
 
+
 $(document.getElementsByClassName('chveni-produqti-li')[0]).hover(function(){
+
     $(document.getElementsByClassName('chveni-prodquti-hover')[0]).css("display", "flex");
+    $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", "none");
+    
     }, function(){
         $(document.getElementsByClassName('chveni-prodquti-hover')[0]).hover(function(){
             $(document.getElementsByClassName('chveni-prodquti-hover')[0]).css("display", "flex");
@@ -96,10 +100,36 @@ $(document.getElementsByClassName('chveni-produqti-li')[0]).hover(function(){
 
 $(document.getElementsByClassName('chven-shesaxeb-li')[0]).hover(function(){
     $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", "flex");
+    $(document.getElementsByClassName('chveni-prodquti-hover')[0]).css("display", 'none');
     }, function(){
     $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).hover(function(){
         $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", "flex");
+        
         }, function(){
         $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", 'none');
         }); 
+});
+
+chvenShesaxebMenu = document.getElementsByClassName('chven-shesaxeb-hover')[0];
+productMenu = document.getElementsByClassName('chveni-prodquti-hover')[0];
+
+$(document.getElementsByClassName('navbar-top')[0]).hover(function(){
+    if($(chvenShesaxebMenu).css('display') == 'flex'){
+         console.log('muteli');
+        $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", "none");
+        $(document.getElementsByClassName('chveni-prodquti-hover')[0]).css("display", 'none');
+     }  
+    
+    }, function(){
+ 
+});
+$(document.getElementsByClassName('navbar-top')[0]).hover(function(){
+    if($(productMenu).css('display') == 'flex'){
+         console.log('muteli');
+        $(document.getElementsByClassName('chven-shesaxeb-hover')[0]).css("display", "none");
+        $(document.getElementsByClassName('chveni-prodquti-hover')[0]).css("display", 'none');
+     }  
+    
+    }, function(){
+ 
 });
